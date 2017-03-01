@@ -1,0 +1,9 @@
+{% extends 'layouts/app.twig' %}
+{% block content %}
+    {% for d in data %}
+        <h1>{{d.title}}</h1>
+        <ul>
+            <li>{{d.comment}}</li>
+        </ul>
+    {% endfor %}
+{% endblock %}
